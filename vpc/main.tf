@@ -41,6 +41,7 @@ resource "aws_route_table" "public_route_table" {
     Name = "sunil-public-rt"
   }
   }
+}
 
   resource "aws_route_table_association" "public" {
   subnet_id      = aws_subnet.pubilc_subnet.id
